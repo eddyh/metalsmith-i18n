@@ -1,0 +1,39 @@
+{
+  "name": "metalsmith-i18next",
+  "version": "0.1.0",
+  "description": "Metalsmith plugin for i18next and generating your site in multiple languages.",
+  "keywords": [
+    "metalsmith",
+    "i18n",
+    "i18next",
+    "localization",
+    "locale"
+  ],
+  "main": "lib/index.js",
+  "homepage": "https://github.com/eddyh/metalsmith-i18next",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha -R spec --harmony -u bdd test.js"
+  },
+  "author": "Edwin Westerhoud <edwin@voormedia.com>",
+  "license": "MIT",
+  "dependencies": {
+    "multimatch": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eddyh/metalsmith-i18n.git"
+  },
+  "bugs": {
+    "url": "http://github.com/eddyh/metalsmith-i18n/issues"
+  },
+  "devDependencies": {
+    "chai": "3.4.1",
+    "haml-coffee": "1.14.1",
+    "i18next": "^12.0.0",
+    "metalsmith": "2.1.0",
+    "metalsmith-copy": "0.2.1",
+    "metalsmith-in-place": "1.3.2",
+    "metalsmith-uglify": "1.2.1",
+    "mocha": "2.3.4"
+  }
+}

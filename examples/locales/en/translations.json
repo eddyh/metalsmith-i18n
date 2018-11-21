@@ -1,0 +1,9 @@
+{
+	"common": {
+		"foo":"Foo!!!"
+	},
+
+	"home": {
+		"hello": "Hello __name__"
+	}
+}
