@@ -73,6 +73,22 @@ t('title')                // => Looks in ./locales/<locale>/common.json for titl
 ```
 <hr>
 
+#### `function tt(String key, [Object options])`
+
+return the key if the current locale is the default locale. Translates the key
+if it's not the default locale. The key and options are passed on to the i18n
+instance. The target locale is added to the options.
+
+Can be used for keeping the source translations inline.
+
+Example with i18next:
+Given the default options and namespaces `['common','public']`
+```
+tt('public:Welcome')		  // Returns 'Welcome' for the default locale
+tt('public:Welcome')		  // Looks in ./locales/<locale>/public.json for the 'Welcome' translation
+```
+<hr>
+
 #### `function tpath(String file)`
 translates the path of a file without locale information to one with
 
